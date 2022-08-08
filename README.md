@@ -17,6 +17,7 @@ Free for all🙂....ENJOY
 >> pkg install python
 >> pip install python2
 >> pkg install python3 
+>> apt install python3-pip
 >> pkg install ast
 >> pkg install mechanize
 >> pkg install response
