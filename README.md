@@ -1,3 +1,4 @@
+
 # G SPLINTER ( GOOGLE MAIL CRACKER)
 
 Google mail cracker is another software coded by cybernetics
@@ -6,7 +7,7 @@ Python 3.10 was released on 2nd of august 2022, while this tool was uploaded on 
 Request and https modules are at the latest version... Efficiency and Accuracy is 100% certain.</br>
 Use this tool for legal hacking and educational purposes only </br>
 Free for all🙂....ENJOY
-
+![splint py - DEV SOFTWARES - Visual Studio Code 08-Aug-22 1_03_52 PM](https://user-images.githubusercontent.com/79071277/183423240-7372d2f7-ca4f-4b72-8de9-806fff3da605.png)
 
 
 
