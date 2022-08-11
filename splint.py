@@ -44,11 +44,6 @@ while answer:
         print('\033[1;36m \______  / /_______  / |____|    |_______ \|___|\____|__  /  |____|   /_______  / |____|_  / \033[1;36m')
         print('\033[1;36m        \/          \/                    \/             \/                    \/         \/  \033[1;00m')
 
-        Try
-        import tokenize
-        ExceptHandler
-        print("TO CONTINUE\nplease intall tokenize",end='*')
-        sys.exit()
 
         input = ("enter any key to continue: ")
 
@@ -91,7 +86,7 @@ while answer:
                 file=open('pass.txt','o','r')
                 password=file.readline().strip()
         i=+1
-        if length(password) < 11:
+        if len(password) < 11:
            continue
         print=str(i) + " : ",password
     
