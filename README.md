@@ -20,8 +20,9 @@ Free for all🙂....ENJOY
 >> pkg install python3 
 >> apt install python3-pip
 >> pkg install ast
+>> pip3 install mechanize
 >> pkg install mechanize
->> pkg install response
+>> pip3 install response
 >> pip3 install requirements.txt
 >> pkg install git
 >> git clone https://github.com/shade234sherif/gsplinter
