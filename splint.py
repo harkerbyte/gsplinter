@@ -5,7 +5,7 @@ from ssl import HAS_SSLv2
 import mechanize 
 from math import pi
 import numbers 
-import response
+import requests
 import fileinput
 import datetime
 import sys
