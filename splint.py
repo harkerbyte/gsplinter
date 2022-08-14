@@ -6,7 +6,6 @@ import mechanize
 from math import pi
 import numbers 
 import requests
-import response
 import fileinput
 import datetime
 import sys
