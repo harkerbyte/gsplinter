@@ -23,9 +23,9 @@ Free for all🙂....ENJOY
 >> pip3 install mechanize
 >> pkg install mechanize
 >> pip3 install response
->> pip3 install requirements.txt
 >> pkg install git
 >> git clone https://github.com/shade234sherif/gsplinter
+>> pip3 install requirements.txt
 >> cd gsplinter
 >> python3 splint.py
 
