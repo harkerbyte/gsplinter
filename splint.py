@@ -56,7 +56,7 @@ while answer:
         web.addheaders = [('User-agent',header)]
         web.open(url)
         Try 
-        If; response; code = 200
+        If; responses; code = 200
         web.set_handler_redirect(True)
         web.set_handler_robots(False)
         web.set_handler_gzip(False)
