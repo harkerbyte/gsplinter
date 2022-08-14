@@ -44,11 +44,8 @@ while answer:
         print('\033[1;36m \______  / /_______  / |____|    |_______ \|___|\____|__  /  |____|   /_______  / |____|_  / \033[1;36m')
         print('\033[1;36m        \/          \/                    \/             \/                    \/         \/  \033[1;00m')
 
-
-        input = ("enter any key to continue: ")
-
         Break;
-        mail = input("Enter target mail address: ")
+        mail = input("Enter target mail address:")
 
         import mechanize
 
@@ -108,7 +105,7 @@ while answer:
         header='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
         test.open(ourl)
         Try
-        If; response; code=200
+        If; responses; code=200
         print('NETWORK CONNECTION IS GOOD - TIME CAPTURED')
         now = datetime.datetime.now()
         print(now.strftime('%y-%m-%d %H : %M : %S'))
