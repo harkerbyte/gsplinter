@@ -65,7 +65,7 @@ while answer:
 
         responses = web.open(url)
 
-        web.select_form(nr=0)()
+        web.select_form(nr=0)
 
         web.form['Email or phone'] = mail
 
