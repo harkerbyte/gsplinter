@@ -1,5 +1,4 @@
-
-# G SPLINTER ( GOOGLE MAIL CRACKER)
+# G SPLINTER ( GOOGLE MAIL CRACKER) DON'T INSTALL UNTIL 20th 
 
 Google mail cracker is another software coded by cybernetics
 The tool is written in the latest version of python (3.10), plus the latest modules.
